@@ -1,5 +1,7 @@
 Debian/Ubuntu repo for the bootc package
 
+Check https://github.com/jumpyvi/ubuntu-bootc-remix for a ready-made Bootc Ubuntu image
+
 # Compatibility
 - Debian
   - Forky, Sid
