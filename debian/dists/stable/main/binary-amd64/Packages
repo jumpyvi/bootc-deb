@@ -1,0 +1,14 @@
+Package: bootc
+Version: 1.15.2
+Architecture: amd64
+Maintainer: JumpyVi <jumpyvi@outlook.com>
+Depends: dracut, ostree
+Filename: debian/pool/main/bootc_amd64.deb
+Size: 51788640
+MD5sum: 93c9ff8c1fe920e297956188b7e2f949
+SHA1: 5f1ba98535f3c730e8719d3322ef22c78c00930f
+SHA256: c1c2051cc87049f1185fdd1eed45299ae645509a51159c1db6af9b4e9d9a13d9
+Section: admin
+Priority: optional
+Description: bootc
+
