@@ -1,0 +1,44 @@
+name: Release Debian Package
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install APT Repository Tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y dpkg-dev apt-utils
+
+      - name: Build .deb package and construct Repo
+        run: |
+          docker build -t bootc-builder .
+          docker run --name builder bootc-builder
+          
+          docker cp builder:/out ./docker-output
+          
+          mkdir -p ./apt-repo/debian/dists/stable/main/binary-amd64
+          mkdir -p ./apt-repo/debian/pool/main
+          
+          mv ./docker-output/*.deb ./apt-repo/debian/pool/main/
+
+          cd ./apt-repo
+          
+          dpkg-scanpackages debian/pool/main /dev/null > debian/dists/stable/main/binary-amd64/Packages
+          
+          gzip -9k debian/dists/stable/main/binary-amd64/Packages
+          
+          apt-ftparchive release debian/dists/stable > debian/dists/stable/Release
+
+      - name: Deploy to GitHub Pages
+        uses: jamesives/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: apt-repo # This ensures ONLY your repository files are published
