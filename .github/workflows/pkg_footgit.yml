@@ -17,7 +17,7 @@ on:
 
 jobs:
   release-foot:
-    uses: ./.github/workflows/build-deb-package.yml
+    uses: ./.github/workflows/reusable.yml
     with:
       containerfile: pkgs/foot-git.Containerfile
       package_name: foot-git
