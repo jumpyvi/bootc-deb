@@ -27,7 +27,7 @@ jobs:
       codename: stable
       architecture: amd64
       component: main
-      pages_branch: gh-pages
+      deploy_on: gh-pages
     secrets:
       GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
       GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
