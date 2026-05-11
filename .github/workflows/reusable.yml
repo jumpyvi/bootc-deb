@@ -64,6 +64,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Checkout existing gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.deploy_on }}
+          path: existing-pages
+        continue-on-error: true
+
       - name: Install APT Repository Tools
         run: |
           sudo apt-get update
@@ -94,6 +101,14 @@ jobs:
           mkdir -p "${POOL_DIR}"
           mkdir -p "${DIST_DIR}"
 
+          # Restore existing packages
+          EXISTING_POOL="./existing-pages/debian/pool/${COMPONENT}"
+          if [ -d "${EXISTING_POOL}" ]; then
+            echo "Restoring existing pool packages..."
+            cp "${EXISTING_POOL}"/*.deb "${POOL_DIR}/" 2>/dev/null || true
+          fi
+
+          # Add new packages
           mv ./docker-output/*.deb "${POOL_DIR}/"
 
           cd ./apt-repo/debian
