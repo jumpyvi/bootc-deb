@@ -1,4 +1,4 @@
-name: Release Foot Debian Package
+name: Release Foot (Git) Debian Package
 
 permissions:
   contents: write
