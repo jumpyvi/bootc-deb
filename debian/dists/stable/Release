@@ -1,23 +1,23 @@
 Architectures: amd64
 Codename: stable
 Components: main
-Date: Mon, 11 May 2026 23:47:03 +0000
+Date: Fri, 15 May 2026 11:39:08 +0000
 Label: Bootc-Deb
 Origin: jumpyvi
 Suite: stable
 MD5Sum:
- bea12f5c65cba30e8cef8c6fba9e416b              140 Release
- c040b0a987fbeec6506755905f1e480d              933 main/binary-amd64/Packages
- 8664287c2182cd1ad24b6b64c6d1f3c3              564 main/binary-amd64/Packages.gz
+ 19590d909e21144dcfde1b137579cf5b              140 Release
+ f33149c81c65791b56c8bddd2fe92cf5              933 main/binary-amd64/Packages
+ 677fae998a854fe1d86e1580d4c9d962              563 main/binary-amd64/Packages.gz
 SHA1:
- 5e038b7d661462e03c984cd7aaf07eebd3286801              140 Release
- 838d073cc31437d6cf3ce664f45be0de15f7346d              933 main/binary-amd64/Packages
- 4783b6552d0f808f9f459b46d49f1f9fe73aa661              564 main/binary-amd64/Packages.gz
+ 179cc360012893697b2c67e8d9957438083fcc78              140 Release
+ c968b8c6e9d7c36d6bddde1aba02a6cd64666849              933 main/binary-amd64/Packages
+ c4902d1a844f028ed05330a609ae614c19192fba              563 main/binary-amd64/Packages.gz
 SHA256:
- 71eac8615b9333328aae89c9d76e3e112574e1e47b284024401726780234c9a0              140 Release
- 8bd66423e6342730fc61621d2c56aa3d355a76568ecdf612f2a247ba8c20c97b              933 main/binary-amd64/Packages
- 2030d1dfaa94159401faf32d5a6d216f042eb061874da637c1db07b946894d14              564 main/binary-amd64/Packages.gz
+ 747c7a5cef1b00183ada9cd4eeee857efcc00f990cba75b714ab4d4006065796              140 Release
+ 3fb57cf25a56c843e2b13d713e6030b92fb091d29b9f9f00ba9eca1155158dff              933 main/binary-amd64/Packages
+ b54f759794ae815e2fe34361c2ba09a3664ad124af9e4b332cc70b589cefa8d3              563 main/binary-amd64/Packages.gz
 SHA512:
- e8336d8f6dbce2dbc122f6815b54dbe405de0e4058a5354ab29fe2f9b1a346b198a2c59baaf8e701b2228828c75df49af851653b344e4b2d0c0abe4634503c3c              140 Release
- d108d881e913ff31eb16bd4cf216b468bf6fc4274112cf2979536c4692317f1f842994807c3305f8d9fa6d7681025d3c093e90be0887449dd2068f8dfa65a9cb              933 main/binary-amd64/Packages
- 9b4098e57e0e76d993abb21882511e30ae047aee5ed9be3f43c28e040deb5aa9288b56220833116fbcfe2a811405f1475011d1e795de08771d671735614de24d              564 main/binary-amd64/Packages.gz
+ 54a9346e1b52189ee0b1e79e330547ab41ce9761c14463d8341496dc9652e84185bc9060e6c8608b0438445f5872e15207bc972795c4107d9d677606b5774b21              140 Release
+ 276594af26439555b2bd7d45f054dd5b09bf0c7a84d050b2f668fcdf8e248308a8321f5979b640ddb5c9ae14920ffd10c9c771bffdeef20540e69df140dc662f              933 main/binary-amd64/Packages
+ 5dd3cb7fd7181d43313d2be9512d7eb0f382d70ba22c1e52557cbe85e56f957f81773c2d46425840d67cc9d7947eb8ab33afe86635c924b31f853ecb52cd272a              563 main/binary-amd64/Packages.gz
